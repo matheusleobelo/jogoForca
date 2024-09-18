@@ -1,82 +1,88 @@
 Jogo da Forca - Recriação
-Este é um projeto de recriação do jogo da forca. O objetivo é ensinar o básico de Git e GitHub enquanto trabalhamos juntos no desenvolvimento do jogo. Acesse o repositório em Jogo da Forca.
+Este é um projeto de recriação do jogo da forca. O objetivo é ensinar o básico de Git e GitHub enquanto trabalhamos juntos no desenvolvimento do jogo. O projeto será dividido em três branches principais: main, reserva e final.
 
-Instruções para Iniciantes no Git
+Acesse o repositório em Jogo da Forca.
+
+Estrutura do Projeto
+main: Branch principal onde o código mais atual e funcional será mantido.
+reserva: Branch de trabalho onde todos vão contribuir.
+final: Branch para integração final das funcionalidades.
+Regras de Contribuição
+Todo o trabalho será feito na branch reserva.
+O arquivo principal será o main.js, que conterá o código mais atualizado e funcional.
+Cada membro deve copiar o código de main.js para o seu arquivo individual (nome.js) antes de começar a trabalhar.
+Todas as alterações e testes devem ser feitos exclusivamente no arquivo individual (nome.js). Isso permite testar mudanças sem interferir no código principal.
+Não há responsáveis por features específicas; todos estão focados em resolver um único problema juntos.
+Instruções Iniciais
 1. Clonando o Repositório
-Para começar, abra o VS Code e siga estas etapas:
+Abra o VS Code.
 
-Abra o terminal no VS Code (atalho: Ctrl + ou acesse o menu Terminal > New Terminal).
+Crie uma pasta para o projeto dentro do VS Code (clique com o botão direito na barra lateral e selecione "New Folder").
 
-Navegue até a pasta onde você deseja salvar o projeto. Se você estiver na área de trabalho, por exemplo, utilize:
+Abra o terminal no VS Code (atalho: Ctrl + ou vá em Terminal > New Terminal).
 
-cd Desktop
-
-ou navegue até outra pasta da sua escolha.
-
-Clone o repositório com o comando:
+Dentro da pasta que você criou, execute o seguinte comando para clonar o repositório:
 
 git clone https://github.com/matheusleobelo/jogoForca.git
 
-Isso criará uma pasta chamada jogoForca com todos os arquivos do projeto.
+Entre na pasta do projeto usando o terminal:
 
-2. Criando uma Nova Branch
-Antes de fazer qualquer modificação, crie uma nova branch para trabalhar sem alterar o código principal:
+cd jogoForca
 
-No terminal, dentro da pasta do projeto, use o comando:
+2. Mudando para a Branch Reserva
+Antes de começar a trabalhar, mude para a branch de trabalho:
 
-git checkout -b nome-da-sua-branch
+git checkout reserva
 
-Substitua "nome-da-sua-branch" por algo que descreva o que você está fazendo, como melhorar-interface.
+3. Copiando o Código do main.js
+Antes de fazer qualquer alteração, abra o arquivo main.js, selecione todo o conteúdo com Ctrl + A, copie com Ctrl + C e cole no seu arquivo individual (nome.js).
 
-3. Adicionando Modificações
-Depois de fazer as alterações no código, siga estes passos para salvá-las:
+Agora, você pode editar e testar suas mudanças no seu arquivo.
 
-No terminal, verifique quais arquivos foram modificados com:
+Mantendo o Código Atualizado Antes de Qualquer Mudança
+Sempre que você for fazer novas alterações no código, siga este passo a passo para garantir que está com a versão mais recente do projeto:
+
+No terminal, execute o comando para garantir que você está na branch reserva:
+
+git checkout reserva
+
+Atualize seu repositório local com as últimas mudanças da branch reserva:
+
+git pull origin reserva
+
+Verifique se há mudanças no seu arquivo com:
 
 git status
 
-Adicione os arquivos modificados com o comando:
+Agora, copie o código mais recente de main.js para o seu arquivo pessoal nome.js e faça suas alterações e testes.
 
-git add nome-do-arquivo
+Fazendo e Enviando Suas Alterações
+Depois de testar e validar suas mudanças no seu arquivo nome.js, siga os passos para fazer o commit e enviar suas alterações para o GitHub:
 
-Para adicionar todos os arquivos modificados de uma vez:
+Adicione todas as suas mudanças:
 
 git add .
 
-4. Fazendo um Commit
-Agora, salve as alterações com uma mensagem explicando o que foi feito:
+Faça um commit descrevendo as mudanças feitas:
 
-No terminal, execute o comando:
+git commit -m "Descrição das alterações"
 
-git commit -m "Descreva aqui as alterações que você fez"
+Envie as mudanças para a branch reserva no GitHub:
 
-Lembre-se de usar mensagens claras para que os outros membros entendam o que foi alterado.
+git push origin reserva
 
-5. Enviando para o GitHub
-Após o commit, você pode enviar as mudanças para o GitHub:
-
-No terminal, envie a branch que você criou:
-
-git push origin nome-da-sua-branch
-
-Substitua "nome-da-sua-branch" pelo nome da branch que você criou anteriormente.
-
-6. Criando um Pull Request
-Agora que suas alterações estão no GitHub, você pode pedir para que elas sejam revisadas e integradas ao código principal criando um Pull Request:
-
-Acesse o repositório no GitHub em Jogo da Forca.
-No topo da página, clique no botão "Compare & pull request".
-Adicione uma descrição detalhada das mudanças que você fez.
-Clique em "Create pull request".
-7. Comandos Úteis do Git
+Comandos Úteis do Git
 Verificar o histórico de commits:
 
 git log
 
-Atualizar o repositório local com as últimas mudanças do repositório remoto:
+Verificar o status dos arquivos:
 
-git pull origin main
+git status
 
-Mudar de branch:
+Atualizar o repositório local com as últimas mudanças:
 
-git checkout nome-da-branch
+git pull origin reserva
+
+Dicas para o Projeto
+Organização: Faça commits regulares e mantenha seu arquivo separado dos demais até que a integração seja feita.
