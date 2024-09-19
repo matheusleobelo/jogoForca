@@ -1,4 +1,4 @@
-Jogo da Forca - Recriação
+# Jogo da Forca - Recriação
 Este é um projeto de recriação do jogo da forca. O objetivo é ensinar o básico de Git e GitHub enquanto trabalhamos juntos no desenvolvimento do jogo. O projeto será dividido em três branches principais: main, reserva e final.
 
 Acesse o repositório em Jogo da Forca.
@@ -14,7 +14,7 @@ Cada membro deve copiar o código de main.js para o seu arquivo individual (nome
 Todas as alterações e testes devem ser feitos exclusivamente no arquivo individual (nome.js). Isso permite testar mudanças sem interferir no código principal.
 Não há responsáveis por features específicas; todos estão focados em resolver um único problema juntos.
 Instruções Iniciais
-1. Clonando o Repositório
+## 1. Clonando o Repositório
 Abra o VS Code.
 
 Crie uma pasta para o projeto dentro do VS Code (clique com o botão direito na barra lateral e selecione "New Folder").
@@ -23,18 +23,18 @@ Abra o terminal no VS Code (atalho: Ctrl + ou vá em Terminal > New Terminal).
 
 Dentro da pasta que você criou, execute o seguinte comando para clonar o repositório:
 
-git clone https://github.com/matheusleobelo/jogoForca.git
+```git clone https://github.com/matheusleobelo/jogoForca.git```
 
 Entre na pasta do projeto usando o terminal:
 
-cd jogoForca
+```cd jogoForca```
 
-2. Mudando para a Branch Reserva
+## 2. Mudando para a Branch Reserva
 Antes de começar a trabalhar, mude para a branch de trabalho:
 
-git checkout reserva
+```git checkout reserva```
 
-3. Copiando o Código do main.js
+## 3. Copiando o Código do main.js
 Antes de fazer qualquer alteração, abra o arquivo main.js, selecione todo o conteúdo com Ctrl + A, copie com Ctrl + C e cole no seu arquivo individual (nome.js).
 
 Agora, você pode editar e testar suas mudanças no seu arquivo.
@@ -44,15 +44,15 @@ Sempre que você for fazer novas alterações no código, siga este passo a pass
 
 No terminal, execute o comando para garantir que você está na branch reserva:
 
-git checkout reserva
+```git checkout reserva```
 
 Atualize seu repositório local com as últimas mudanças da branch reserva:
 
-git pull origin reserva
+```git pull origin reserva```
 
 Verifique se há mudanças no seu arquivo com:
 
-git status
+```git status```
 
 Agora, copie o código mais recente de main.js para o seu arquivo pessoal nome.js e faça suas alterações e testes.
 
@@ -61,24 +61,24 @@ Depois de testar e validar suas mudanças no seu arquivo nome.js, siga os passos
 
 Adicione todas as suas mudanças:
 
-git add .
+```git add .```
 
 Faça um commit descrevendo as mudanças feitas:
 
-git commit -m "Descrição das alterações"
+```git commit -m "Descrição das alterações"```
 
 Envie as mudanças para a branch reserva no GitHub:
 
-git push origin reserva
+```git push origin reserva```
 
 Comandos Úteis do Git
 Verificar o histórico de commits:
 
-git log
+```git log```
 
 Verificar o status dos arquivos:
 
-git status
+```git status```
 
 Atualizar o repositório local com as últimas mudanças:
 
