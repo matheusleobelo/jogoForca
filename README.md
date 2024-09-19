@@ -86,3 +86,39 @@ git pull origin reserva
 
 Dicas para o Projeto
 Organização: Faça commits regulares e mantenha seu arquivo separado dos demais até que a integração seja feita.
+
+Como Jogar o Jogo da Forca? 
+
+O jogo da forca, também conhecido por enforcado ou carrasco, é bastante simples e pode ser jogado por duas ou mais pessoas. Um dos participantes pensa numa palavra e desenha uma linha em branco para cada letra da palavra, sem a revelar. Os outros jogadores tentam adivinhar as letras que compõem a palavra, sugerindo uma letra de cada vez. 
+
+Cada vez que um jogador sugere uma letra correta, esta é preenchida nas linhas correspondentes. No entanto, se a letra não fizer parte da palavra, é desenhada uma parte do corpo de um boneco. O objetivo completar a palavra antes que o desenho do boneco seja finalizado: 
+
+    Desenhe num quadro ou folha de papel a estrutura de uma forca; 
+
+    Selecione a palavra e coloque um traço por cada letra; 
+
+    Quem está a adivinhar a palavra diz uma letra de cada vez; 
+
+    Se acertar escreve-se a letra no respetivo lugar; 
+
+    Se errar, começa a desenhar-se o boneco (primeiro a cabeça, depois o tronco, de seguida pernas e braços e termina-se com olhos, nariz e boca); 
+
+    O jogador perde se não conseguir identificar a palavra antes do desenho estar completo; 
+
+    Em qualquer momento o jogador pode tentar adivinhar a palavra, mas se errar acrescenta-se algo ao desenho. 
+
+ 
+
+    Criar lista de palavras, sortear uma delas (array com palavras dentro e uma função para escolher um) 
+
+    Colocar as linhas do tamanho da palavra selecionada 
+
+    Quando uma letra for sugerida no terminal, irá aparecer se é ou não da palavra 
+
+    Se correto deverá preencher uma das posições das linhas 
+
+    Se correto substitui uma das linhas pela palavra correta em sua posição respectiva 
+
+    Se errado começar a desenhar um boneco toda vez que errar 
+
+    Dicas(opcional) 
