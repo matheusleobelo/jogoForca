@@ -75,31 +75,35 @@ function getRandomIntInclusive(min, max) {
   let traco = [];
   const palavra = dicionario[0].split("");
   let acerto = 0;
+  //parte visual da forca
+  console.log("----------------JOGO DA FORCA-----------------\n",estagios[0]);
   
   //Criar traço do tamanho da palavra
   for (let index = 0; index < dicionario[0].length; index++) {
     traco.push(" _ ");
   }
-  
-  while (true) {
-    let chute = readline.question("Diga seu palpite: ");
-  
-    for (let index = 0; index < dicionario[0].length; index++) {
-      if (palavra[index] == chute) {
-        traco[index] = palavra[index];
-        console.log(traco);
-        acerto += 1;
-      } else if (acerto > 1) {
-        acerto = 1;
-      }
+
+  console.log(traco.join(""));
+  //fim da parte visual
+
+
+//chutes atuais e lista de chutes anteriores
+  let chute = readline.question("\nDiga seu palpite: ");
+  let chuteAnt = []
+
+//verificação de letra repetida
+ if (chuteAnt.includes(chute)){
+    console.log("Você já chutou essa letra!")
+ }else {
+    chuteAnt.push(chute)
+ }
+ 
+
+for (let index = 0; index < palavra.length; index++) {
+    if (palavra[index] === chute) {
+        traco[index] = chute; 
+
     }
-  
-    if (acerto == 0) {
-      console.log(estagios[0]);
-    } else {
-      acerto = 0;
-    }
-  }
-  
-  // console.log(`sua palavra é ${traco}`);
-  
+}
+console.log(traco.join(" "));
+
