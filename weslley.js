@@ -73,7 +73,7 @@ function getRandomIntInclusive(min, max) {
   let readline = require("readline-sync");
   let dicionario = ["casa", "palavra2", "palavra3"];
   let traco = [];
-  const palavra = dicionario[0].split("");
+  const letra = dicionario[0].split("");
   let acerto = 0;
   //parte visual da forca
   console.log("----------------JOGO DA FORCA-----------------\n",estagios[0]);

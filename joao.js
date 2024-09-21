@@ -45,7 +45,7 @@ function getRandomIntInclusive(min, max) {
     -----
     |   |
     |   O
-    |  /|\
+    |  /|\\
     |
     |
     --------
@@ -54,7 +54,7 @@ function getRandomIntInclusive(min, max) {
     -----
     |   |
     |   O
-    |  /|\
+    |  /|\\
     |  /
     |
     --------
@@ -63,25 +63,27 @@ function getRandomIntInclusive(min, max) {
     -----
     |   |
     |   O
-    |  /|\
-    |  / \
+    |  /|\\
+    |  / \\
     |
     --------
     `,
   ];
   
   let readline = require("readline-sync");
-  let dicionario = ["casa", "palavra2", "palavra3"];
+  let dicionario = ["casa", "java", "php", "bola", "rede", "jogo", "cidade", "beleza", "Felipe", "grupo", 
+    "professor", ];
   let traco = [];
   const palavra = dicionario[0].split("");
   let acerto = 0;
-  let vidas = 7
+  let vida = 6
+  
   //Criar traço do tamanho da palavra
   for (let index = 0; index < dicionario[0].length; index++) {
     traco.push(" _ ");
   }
   
-  while (true) {
+  while (vida != 0 && derrota == false) {
     let chute = readline.question("Diga seu palpite: ");
   
     for (let index = 0; index < dicionario[0].length; index++) {
@@ -89,6 +91,7 @@ function getRandomIntInclusive(min, max) {
         traco[index] = palavra[index];
         console.log(traco);
         acerto += 1;
+        //Letras repetidas
       } else if (traco.includes(chute)) {
         console.log("Ja tem a letra, digite outra", chute);
       } else if (acerto > 1) {
@@ -102,13 +105,12 @@ function getRandomIntInclusive(min, max) {
       acerto = 0;
     }
   }
-  function play()
-    while (vidas>0){
-      let letra = readline("Digite uma letra :")
-
-    }
-    if (vidas = 0)
-      console.log ( "Seu merd*, burro, perdeu");
-      conslotchange.log(" Deseja jogar de novo?" );
-  // console.log(`sua palavra é ${traco}`);
+  if(acerto = palavra);
+  console.log("Parabens, voce venceu!")
+ console.log(`sua palavra é ${traco}`);
   
+
+  
+ 
+
+     

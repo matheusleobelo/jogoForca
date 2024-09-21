@@ -74,7 +74,7 @@ function getRandomIntInclusive(min, max) {
   let dicionario = ["casa", "palavra2", "palavra3"];
   let traco = [];
   const palavra = dicionario[0].split("");
-  let acerto = 0;
+  let erro = 0;
   
   //Criar traço do tamanho da palavra
   for (let index = 0; index < dicionario[0].length; index++) {
@@ -88,19 +88,17 @@ function getRandomIntInclusive(min, max) {
       if (palavra[index] == chute) {
         traco[index] = palavra[index];
         console.log(traco);
-        acerto += 1;
       } else if (traco.includes(chute)) {
-        console.log("Ja tem a letra, digite outra", chute);
-      } else if (acerto > 1) {
-        acerto = 1;
-      }
+        console.log("Ja tem a letra, digite outra");
+      }else if (palavra[index] !== chute) {
+        console.log("Voce errou a letra, digite outra");
+        console.log(estagios[erro])
+        erro+=1
+
+      } 
     }
   
-    if (acerto == 0) {
-      console.log(estagios[0]);
-    } else {
-      acerto = 0;
-    }
+    
   }
   
   // console.log(`sua palavra é ${traco}`);
