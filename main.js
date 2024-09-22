@@ -93,6 +93,7 @@ const Desenhos = [
   --------
   `,
 ];
+
 console.log("----------------JOGO DA FORCA-----------------\n",Desenhos[0]);
 //Criar traço do tamanho da palavra
 for (let index = 0; index < dicionario[palavraEscolhida].length; index++) {
@@ -109,6 +110,9 @@ while (vida != 0 && vitoria == false) {
   if (traco.includes(chute)) {
     console.log("Você já digitou essa letra");
   } else {
+    //Limpar terminal
+    console.clear();
+
     for (let index = 0; index < dicionario[palavraEscolhida].length; index++) {
       if (letras[index] == chute) {
         traco[index] = letras[index];
@@ -119,18 +123,18 @@ while (vida != 0 && vitoria == false) {
 
     if (letrasFaltando == 0) {
       vitoria = true;
-    }
+    } 
 
     if (acertos > 0) {
       console.log(Desenhos[estagio]);
       console.log("Acertou");
-      console.log(traco);
+      console.log(traco.join(" "));
       acertos = 0;
     } else {
       estagio += 1;
       console.log(Desenhos[estagio]);
       console.log("Errou");
-      console.log(traco);
+      console.log(traco.join(" "));
       vida -= 1;
     }
   }
